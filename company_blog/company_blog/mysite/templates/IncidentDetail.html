@@ -1,0 +1,6 @@
+{{ incident.incident_name }}
+        {% for comment in commentary %}
+        <div class="card">
+            {{ comment.body }} - <p class="info">commented by: {{ comment.user }}</p>
+        </div>
+        {% endfor %}
